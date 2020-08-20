@@ -1,0 +1,289 @@
+/* General classes for page */
+
+body {
+  font-family: 'Roboto';
+  background-color: #fcfcfc;
+}
+/* Job post card */
+.jobPost {
+  border-color: red;
+  border: solid;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.pagination{
+  display:block;
+}
+
+.hero-title{
+  margin-bottom: 26px;
+  margin-top: 24px;
+  margin-left: 55px;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 500;
+  color: #333;
+}
+
+.hero-description{
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  width: 70%;
+  margin: auto;
+}
+
+.jobNav{
+  background-color: white;
+  box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.022);
+  margin-bottom: 26px;
+}
+
+.jobSelection{
+  padding: 0px;
+  margin-top: 10px;
+  background-color: white;
+  margin-left: 0px;
+}
+
+.jobCategory{
+  padding: 0px;
+  padding-bottom: 22px;
+  background: none;
+  padding-left: 0px;
+  padding-right: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+#firstJobCat{
+  margin-left: 55px;
+}
+
+.jobCard{
+  border: solid 1px;
+  border-color:  #f5f5f5;
+  background-color: white;
+  box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.022);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 26px;
+}
+
+.card-img{
+  width: 60px;
+  border-radius: 10px;
+  margin-top: 11px;
+}
+
+.card-title{
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+.card-text{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-desc{
+  margin: 0px;
+}
+
+.card-cta{
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #1E86FF;
+  border-radius: 8px;
+  color: white;
+}
+
+.card-link {
+  color: white;
+}
+
+.header-cta{
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-right: 14px;
+  padding-left: 14px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  letter-spacing: 0.05em;
+  background-color: white;
+  border-radius: 8px;
+  color: #1E86FF;
+  border: none;
+}
+
+.badge-container{
+
+}
+
+.badge{
+  padding: 8px;
+  margin: 4px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: solid #e6e6e6;
+  border-width: 0.2em;
+  color: #a4a4a4;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+/* Footer */
+
+#footer {
+  background-color: #222;
+  color: #aaaaaa;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+#footer a {
+  color: #cccccc;
+}
+
+#footer a:hover {
+  color: white;
+}
+
+.social a {
+  font-size: 24px;
+}
+
+.social a:hover {
+  text-decoration: none;
+}
+
+/* Lead with big image */
+.wrapper {
+  background-image: url('../images/background/background.jpg');
+  height: 340px;
+  background-size: cover;
+  padding-top: 80px;
+  text-align: center;
+  color: white;
+}
+
+.lead h1 {
+  font-size: 50px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, .2);
+  font-weight: 600;
+}
+
+.lead h2 {
+  background: rgba(0, 0, 0, .4);
+  display: inline-block;
+  padding: 0.2em;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 2em;
+}
+
+/* Vertical spacer to help content breathe */
+
+.vertical-spacer {
+  height: 8em;
+}
+
+/
+
+/* How to override the default Bootstrap colors */
+
+.btn-primary {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+
+.btn-primary:hover {
+  background-color: #16a085;
+  border-color: #16a085;
+}
+
+/* How to override the default Bootstrap navbar */
+
+.navbar-transparent {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-transparent .navbar-brand,
+.navbar-transparent .navbar-nav > li > a {
+  color: #eeeeee;
+}
+
+.navbar-transparent .navbar-brand:hover,
+.navbar-transparent .navbar-brand:active,
+.navbar-transparent .navbar-brand:focus,
+.navbar-transparent .navbar-nav > li > a:hover,
+.navbar-transparent .navbar-nav > li > a:active,
+.navbar-transparent .navbar-nav > li > a:focus,
+.navbar-transparent .navbar-nav > .open > a,
+.navbar-transparent .navbar-nav > .open > a:hover,
+.navbar-transparent .navbar-nav > .open > a:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Responsive Tablet */
+@media only screen and (max-width: 768px) {
+  .card-title {
+    margin-top: 10px;
+  }
+  .card-desc {
+    margin-bottom: 6px;
+  }
+
+  body {
+    background-color: grey;
+  }
+
+  .wrapper{
+    height: 390px;
+  }
+
+  .card-img {
+    margin: auto;
+  }
+}
+
+
+/* Responsive Phone */
+@media only screen and (max-width: 576px) {
+  .card-title {
+    margin-top: px;
+  }
+  .card-desc {
+    margin-bottom: px;
+  }
+
+  .card-img {
+    margin: auto;
+  }
+}
+
+/* Responsive Phone */
+@media only screen and (max-width: 340px) {
+  .wrapper {
+    height: 470px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .jobCategory3 {
+    margin-left: 55px;
+  }
+}
+
+
+

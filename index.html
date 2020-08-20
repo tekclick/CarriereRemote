@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Full Remote - Trouvez un emploi en Remote !</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55209721-15"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-55209721-15');
+    </script>
+
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-transparent" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--a class="navbar-brand" href="index.html">
+            Carriere Remote
+          </a-->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <!-- <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul> -->
+          <!--ul class="nav navbar-nav navbar-right">
+            <li>
+              <button><a href="contact.html">Contact</a></button>
+            </li-->
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <div class="wrapper">
+      <div class="lead text-center">
+        <h1>Trouvez votre job en Remote.</h1>
+        <p class="hero-description">
+          Découvrez chaque jour des entreprises françaises qui recrutent en remote et travaillez depuis n'importe où.
+        </p>
+        <button type="button" class="btn btn-light header-cta">Poster votre offre</button>
+
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="orderForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Commandez !</h4>
+          </div>
+          <div class="modal-body">
+            <div id="wufoo-zzstu9e1up5owf">
+            Fill out my <a href="https://iceme.wufoo.com/forms/zzstu9e1up5owf">online form</a>.
+            </div>
+            <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">There are tons of <a href="http://www.wufoo.com/features/">Wufoo features</a> to help make your forms awesome.</div>
+            <script type="text/javascript">var zzstu9e1up5owf;(function(d, t) {
+            var s = d.createElement(t), options = {
+            'userName':'iceme',
+            'formHash':'zzstu9e1up5owf',
+            'autoResize':true,
+            'height':'463',
+            'async':true,
+            'host':'wufoo.com',
+            'header':'show',
+            'ssl':true};
+            s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+            s.onload = s.onreadystatechange = function() {
+            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+            try { zzstu9e1up5owf = new WufooForm();zzstu9e1up5owf.initialize(options);zzstu9e1up5owf.display(); } catch (e) {}};
+            var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+            })(document, 'script');</script>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row text-center jobNav">
+        <div class="col-sm-12 col-md-12 jobSelection text-left">
+          <h1 class="hero-title">Les jobs du moment</h1>
+          <button type="button" class="btn btn-light jobCategory" id="firstJobCat">Code  🤖</button>
+          <button type="button" class="btn btn-light jobCategory">Marketing  🚀</button>
+          <button type="button" class="btn btn-light jobCategory jobCategory3">Sales  💸</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-sm-12 col-md-12 ">
+
+          <!-- START OF JOB CARD N1 -->
+          <div class="card mb-12 jobCard" >
+            <div class="row no-gutters">
+              <div class="col-md-1 col-xs-2 col-sm-2">
+                <img class="card-img" src="https://www.assessfirst.com/__front/img/logo-little.png" alt="AssessFirst">
+              </div>
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="card-body text-left">
+                  <h1 class="card-title">Responsable administratif et financier</h1>
+                  <h4 class="card-text">AssessFirst</h4>
+                  <p class="card-desc">CDI</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12 col-sm-2 badge-container">
+                  <span class="badge">Comptabilité</span>
+                  <span class="badge">RH</span>
+                  <span class="badge">Relation fournisseurs</span>
+              </div>
+              <div class="col-md-2 col-xs-12 col-sm-2">
+                <button type="button" class="btn btn-light card-cta"><a href="https://www.welcometothejungle.com/fr/companies/assessfirst/jobs/responsable-administratif-et-financer-h-f_paris" class="card-link" target="_blank"> Postuler</a></button>
+              </div>
+            </div>
+          </div>
+          <!-- END OF JOB CARD N1 -->
+
+          <!-- START OF JOB CARD N2 -->
+          <div class="card mb-12 jobCard" >
+            <div class="row no-gutters">
+              <div class="col-md-1 col-xs-2 col-sm-2">
+                <img class="card-img" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/78175535_2630071160393708_382055727734194176_n.png?_nc_cat=111&_nc_sid=09cbfe&_nc_ohc=Ij22Mz1xZr8AX-Xzhrc&_nc_oc=AQkXbBrHDO1FlUN8X4hqW9MZHO-2niTf9ZJn_NlB13wkIdzqX0BxZUHuPZJTJbCe4tk&_nc_ht=scontent-cdg2-1.xx&oh=e904aa6d29dbcc850cdc45087aa6a242&oe=5F6361B6" alt="AssessFirst">
+              </div>
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="card-body text-left">
+                  <h1 class="card-title">Account Development Representative</h1>
+                  <h4 class="card-text">360Learning</h4>
+                  <p class="card-desc">CDI</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12 col-sm-2 badge-container">
+                  <span class="badge">CRM</span>
+                  <span class="badge">Organisation</span>
+                  <span class="badge">Opérations</span>
+              </div>
+              <div class="col-md-2 col-xs-12 col-sm-2">
+                <button type="button" class="btn btn-light card-cta"><a href="https://www.welcometothejungle.com/fr/companies/360learning/jobs/account-development-representative_paris" class="card-link" target="_blank"> Postuler</a></button>
+              </div>
+            </div>
+          </div>
+          <!-- END OF JOB CARD N2 -->
+
+          <!-- START OF JOB CARD N3 -->
+          <div class="card mb-12 jobCard" >
+            <div class="row no-gutters">
+              <div class="col-md-1 col-xs-2 col-sm-2">
+                <img class="card-img" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/106453672_10158523253304913_8560141828043490145_n.png?_nc_cat=102&_nc_sid=85a577&_nc_ohc=QA3quSO8vkUAX8MwaY3&_nc_ht=scontent-cdg2-1.xx&oh=eb2595ef60265afe2abee5554a1d8467&oe=5F628C1E" alt="Webqam">
+              </div>
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="card-body text-left">
+                  <h1 class="card-title">Stage Marketing/Commercial</h1>
+                  <h4 class="card-text">Webqam</h4>
+                  <p class="card-desc">Stage (2 à 6 mois)</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12 col-sm-2 badge-container">
+                  <span class="badge">Analyse</span>
+                  <span class="badge">Marketing</span>
+                  <span class="badge">Community</span>
+              </div>
+              <div class="col-md-2 col-xs-12 col-sm-2">
+                <button type="button" class="btn btn-light card-cta"><a href="https://www.welcometothejungle.com/fr/companies/webqam/jobs/stage-marketing-commercial_saint-etienne" class="card-link" target="_blank"> Postuler</a></button>
+              </div>
+            </div>
+          </div>
+          <!-- END OF JOB CARD N3 -->
+
+          <!-- START OF JOB CARD N4 -->
+          <div class="card mb-12 jobCard" >
+            <div class="row no-gutters">
+              <div class="col-md-1 col-xs-2 col-sm-2">
+                <img class="card-img" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/51996396_1219140201544075_2047469282903719936_n.png?_nc_cat=111&_nc_sid=85a577&_nc_ohc=BFYGEirEiDQAX_NVWGC&_nc_ht=scontent-cdg2-1.xx&oh=9dd9222243b33f02eeb23c08de2f45ed&oe=5F6560D7" alt="Spendesk">
+              </div>
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="card-body text-left">
+                  <h1 class="card-title">Senior Frontend Engineer</h1>
+                  <h4 class="card-text">Spendesk</h4>
+                  <p class="card-desc">CDI</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12 col-sm-2 badge-container">
+                  <span class="badge">Typescript</span>
+                  <span class="badge">React</span>
+                  <span class="badge">NodeJS</span>
+              </div>
+              <div class="col-md-2 col-xs-12 col-sm-2">
+                <button type="button" class="btn btn-light card-cta"><a href="https://www.welcometothejungle.com/fr/companies/spendesk/jobs/senior-frontend-developer_paris" class="card-link" target="_blank"> Postuler</a></button>
+              </div>
+            </div>
+          </div>
+          <!-- END OF JOB CARD N4 -->
+
+          <!-- START OF JOB CARD N5 -->
+          <div class="card mb-12 jobCard" >
+            <div class="row no-gutters">
+              <div class="col-md-1 col-xs-2 col-sm-2">
+                <img class="card-img" src="https://cdn-images.welcometothejungle.com/jFtGSMerJAwGzP_CLhZOVKKcEfz-BjQal8kCkSY9Ry8/rs:auto:200::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby85Nzc3LzE1MzgzOS9hNzJjNDdiMS0xOWM0LTQ0NDAtYjU3Zi0xMTkwMzkyMDIyYjkucG5n" alt="Strapi">
+              </div>
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="card-body text-left">
+                  <h1 class="card-title">Head of Finance & Operations</h1>
+                  <h4 class="card-text">Strapi</h4>
+                  <p class="card-desc">CDI</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12 col-sm-2 badge-container">
+                  <span class="badge">Legal</span>
+                  <span class="badge">Reporting</span>
+                  <span class="badge">Comptabilité</span>
+              </div>
+              <div class="col-md-2 col-xs-12 col-sm-2">
+                <button type="button" class="btn btn-light card-cta"><a href="https://www.welcometothejungle.com/fr/companies/strapi/jobs/head-of-finance-operations_world" class="card-link" target="_blank"> Postuler</a></button>
+              </div>
+            </div>
+          </div>
+          <!-- END OF JOB CARD N5 -->
+
+          <!-- START OF JOB CARD N6 -->
+          <div class="card mb-12 jobCard" >
+            <div class="row no-gutters">
+              <div class="col-md-1 col-xs-2 col-sm-2">
+                <img class="card-img" src="https://cdn-images.welcometothejungle.com/dT6m5qTFFxhP6ES58XCgzT-NqMR1mcR8-IjmOgT028s/rs:auto:200::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby82MDgzLzE1MTk4Mi9hOWE2YjY5Yi1iMGVhLTRkZjEtYWU5Yy1mMmQ2MTliNzFjZWYuanBn" alt="Wavy">
+              </div>
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="card-body text-left">
+                  <h1 class="card-title">Fullstack JS Developer</h1>
+                  <h4 class="card-text">Wavy</h4>
+                  <p class="card-desc">CDI</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12 col-sm-2 badge-container">
+                  <span class="badge">React</span>
+                  <span class="badge">NodeJS</span>
+                  <span class="badge">MongoDB</span>
+              </div>
+              <div class="col-md-2 col-xs-12 col-sm-2">
+                <button type="button" class="btn btn-light card-cta"><a href="https://www.welcometothejungle.com/fr/companies/wavy/jobs/fullstack-developer_lyon" class="card-link" target="_blank"> Postuler</a></button>
+              </div>
+            </div>
+          </div>
+          <!-- END OF JOB CARD N6 -->
+
+          <!-- START OF JOB CARD N7 -->
+          <div class="card mb-12 jobCard" >
+            <div class="row no-gutters">
+              <div class="col-md-1 col-xs-2 col-sm-2">
+                <img class="card-img" src="https://cdn-images.welcometothejungle.com/PH0qf0H0xBVGhO8XYnayDOn_0DWUc62wIauhH9OGPYA/rs:auto:200::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby82MjYwLzE0NjQ3MC85YzJiYTU3NS0wYzRlLTQyOWMtODg4MC1mMTlmNjRkMDc3ZDIuanBn" alt="Pumpkin">
+              </div>
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="card-body text-left">
+                  <h1 class="card-title">Développeur Backend PHP - Symfony H/F</h1>
+                  <h4 class="card-text">Pumpkin</h4>
+                  <p class="card-desc">CDI</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12 col-sm-2 badge-container">
+                  <span class="badge">Symfony</span>
+                  <span class="badge">ElasticSearch</span>
+                  <span class="badge">Postgresql</span>
+              </div>
+              <div class="col-md-2 col-xs-12 col-sm-2">
+                <button type="button" class="btn btn-light card-cta"><a href="https://www.welcometothejungle.com/fr/companies/pumpkin/jobs/developpeur-se-back-end-symfony-2_lille" class="card-link" target="_blank"> Postuler</a></button>
+              </div>
+            </div>
+          </div>
+          <!-- END OF JOB CARD N7 -->
+
+          <!-- START OF JOB CARD N8 -->
+          <div class="card mb-12 jobCard" >
+            <div class="row no-gutters">
+              <div class="col-md-1 col-xs-2 col-sm-2">
+                <img class="card-img" src="https://cdn-images.welcometothejungle.com/GlTibBokNxK3K3zgC6wu2LgAZO6fnJRdfM2pF9Vk_9o/rs:auto:200::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8wMjE4LzE1OTA1Ni84ODZkY2IzMy1mMzkwLTQzY2EtYmI1Ny01ZGJkNzllNTdjMTMucG5n" alt="Runecast">
+              </div>
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="card-body text-left">
+                  <h1 class="card-title">Frontend Developer</h1>
+                  <h4 class="card-text">Runecast</h4>
+                  <p class="card-desc">CDI</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12 col-sm-2 badge-container">
+                  <span class="badge">Cybersecurity</span>
+                  <span class="badge">Vue.js</span>
+                  <span class="badge">Scrum master</span>
+              </div>
+              <div class="col-md-2 col-xs-12 col-sm-2">
+                <button type="button" class="btn btn-light card-cta"><a href="https://www.welcometothejungle.com/fr/companies/runecast/jobs/frontend-developer_brno" class="card-link" target="_blank"> Postuler</a></button>
+              </div>
+            </div>
+          </div>
+          <!-- END OF JOB CARD N8 -->
+
+          <!-- START OF JOB CARD N9 -->
+          <div class="card mb-12 jobCard" >
+            <div class="row no-gutters">
+              <div class="col-md-1 col-xs-2 col-sm-2">
+                <img class="card-img" src="https://cdn-images.welcometothejungle.com/v3o9bI8cW6aFjLFIvq2N0L2T1_ELp8gkXtt3LXkyb5U/rs:auto:200::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby84MjU2LzE1NjA1MC9lM2VmZmRjZS05MDc1LTQxN2EtOTAyMi1mMDczNTg1Yzg5YTQucG5n" alt="Agicap">
+              </div>
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="card-body text-left">
+                  <h1 class="card-title">Software Engineer Full Stack .NET</h1>
+                  <h4 class="card-text">Agicap</h4>
+                  <p class="card-desc">CDI</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12 col-sm-2 badge-container">
+                  <span class="badge">Typescript</span>
+                  <span class="badge">Angular</span>
+                  <span class="badge">NoSQL</span>
+              </div>
+              <div class="col-md-2 col-xs-12 col-sm-2">
+                <button type="button" class="btn btn-light card-cta"><a href="https://www.welcometothejungle.com/fr/companies/agicap/jobs/fullstack-developer_lyon" class="card-link" target="_blank"> Postuler</a></button>
+              </div>
+            </div>
+          </div>
+          <!-- END OF JOB CARD N9 -->
+
+          <!-- START OF JOB CARD N9 -->
+          <div class="card mb-12 jobCard" >
+            <div class="row no-gutters">
+              <div class="col-md-1 col-xs-2 col-sm-2">
+                <img class="card-img" src="https://cdn-images.welcometothejungle.com/YOKWrkfuXMLC4-e7pool5dwDmoU8QprnyqS_TPG0ybU/rs:auto:200::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby85MjM4LzE1MjAyNC82ZTdhMmY3Yy04MmIwLTQxMWQtYjRmNS05MTJkYjk2NjM3YTMuanBn" alt="Habiteo">
+              </div>
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="card-body text-left">
+                  <h1 class="card-title">Project / Customer Success Assistant - Stage</h1>
+                  <h4 class="card-text">Habiteo</h4>
+                  <p class="card-desc">CDI</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12 col-sm-2 badge-container">
+                  <span class="badge">Conception 3D</span>
+                  <span class="badge">Relation Client</span>
+                  <span class="badge">Project Management</span>
+              </div>
+              <div class="col-md-2 col-xs-12 col-sm-2">
+                <button type="button" class="btn btn-light card-cta"><a href="https://www.welcometothejungle.com/fr/companies/habiteo/jobs/project-customer-success-assistant-stage_paris" class="card-link" target="_blank"> Postuler</a></button>
+              </div>
+            </div>
+          </div>
+          <!-- END OF JOB CARD N9 -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="vertical-spacer"></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <!-- Begin MailChimp Signup Form -->
+          <h2>Inscrivez-vous à la Newsletter</h2>
+          <div id="mc_embed_signup">
+            <form action="http://iceme.us8.list-manage.com/subscribe/post?u=0f796021763dc414ae74dfa60&amp;id=d4fc47ad7d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+
+              <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+
+              <input type="submit" value="Suivez-nous" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary"></div>
+            </form>
+          </div>
+
+          <!--End mc_embed_signup-->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="vertical-spacer"></div>
+
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <!-- div class="col-lg-3">
+            <ul class="list-inline social text-center">
+              <li>
+                <a href="https://twitter.com/iceme">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+
+            </ul>
+          </div -->
+          <div class="col-md-12 text-center">
+            <div class="text-center">
+              Carrière Remote est une entreprise qui a pour objectif de mettre en relation des travailleurs nomades avec des entreprises françaises et étrangères qui recrutent en télétravail.
+              <a href="http://www.full-remote.fr">full-remote.fr</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-39720822-3', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
